@@ -56,13 +56,6 @@ quant-pairs-trading-research/
 - **Walk-forward validation is mandatory, not optional.** Parameters (hedge ratio, entry/exit thresholds) are fit only on a training window and evaluated only on a subsequent, untouched test window, rolled forward through the full history. In-sample and out-of-sample performance are both reported — including when they diverge.
 - **Risk is reported at the portfolio level.** Value-at-Risk and Conditional VaR are computed on the combined, optimized portfolio, not per-pair, since that's what actually matters for capital allocation.
 
-## Getting started
-
-```bash
-pip install -r requirements.txt
-python src/main.py
-```
-
 ## Results
 
 _To be filled in as the pipeline is built — will include cointegration screening results, backtest performance (Sharpe, max drawdown, turnover), walk-forward in-sample vs out-of-sample comparison, optimized portfolio weights, and VaR/CVaR figures._
